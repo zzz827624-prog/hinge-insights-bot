@@ -23,9 +23,9 @@ def main():
 
     print("🤖 AI Agent 正在搜尋並分析 Hinge 轉軸產業情報...")
 
-    # 呼叫 Gemini 2.5 Flash 模型並啟用 Google Search 聯網工具
+    # 呼叫 Gemini 1.5 Flash 模型並啟用 Google Search 聯網工具
     response = client.models.generate_content(
-        model='gemini-2.5-flash',
+        model='gemini-1.5-flash',
         contents=prompt,
         config=types.GenerateContentConfig(
             tools=[{"google_search": {}}],
